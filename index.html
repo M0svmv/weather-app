@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/weather-icon.jpg" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form>
+                
+                <input type="text" placeholder="Enter city name!" id="search" aria-label="Enter city name">
+                <button type="submit" id="searchBtn" aria-label="Search"><img src="./assets/imgs/search.svg" alt="Search icon"></button>
+            </form>
+            <div class="info-container">
+                <div class="img"><img src="./assets/imgs/01d.png" alt="Weather icon" id="icon"></div>
+                <div class="tempData">
+                    <h3 id="weatherState">State</h3>
+                    <h2 class="temp" id="temp">temp</h2>
+                    <h3 class="city-name" id="city">CityName</h3>
+                </div>
+            </div>
+            <div class="wind-humidity">
+                <div class="humidity">
+                    <img src="./assets/imgs/humidity.png" alt="Humidity icon">
+                    <div class="humidityData">
+                        <h2 id="humidity">data</h2>
+                        <h4>Humidity</h4>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="./assets/imgs/wind.png" alt="Wind speed icon">
+                    <div class="windData">
+                        <h2 id="wind">data</h2>
+                        <h4>Wind speed</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
